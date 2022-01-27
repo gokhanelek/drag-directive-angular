@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .todo-body {
+    min-width: 600px;
+    border: 1px solid #c1bdbd;
+    border-radius: 8px;
+    .list-group {
+      .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}

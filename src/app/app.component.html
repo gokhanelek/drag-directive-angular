@@ -1,0 +1,12 @@
+<div class="container mt-3">
+  <h2>Todo List</h2>
+  <div class="todo-body p-3">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let todo of todoList; let position = index" appDragDropSwap
+        [elemPosition]="position" [list]="todoList" (returnUpdatedList)="returnUpdatedList($event)">
+        <span>{{todo.title}}</span>
+        <span>{{todo.description}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
